@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/element"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardview:cardCornerRadius="10dp"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CMSC100:"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:id="@+id/course_code"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Introduction to Python"
+            android:id="@+id/course_title"
+            android:layout_toRightOf="@+id/course_code"
+            android:textSize="20sp"
+            android:layout_margin="10dp"/>
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
