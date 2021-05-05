@@ -2,11 +2,11 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/element"
+    android:id="@+id/course_item"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     cardview:cardCornerRadius="10dp"
-    android:layout_marginTop="10dp">
+    android:layout_margin="5dp">
 
     <RelativeLayout
         android:layout_width="match_parent"

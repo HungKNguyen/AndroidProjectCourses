@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/course_dialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:text="CMSC 106"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/Primary"
+        android:id="@+id/course_dialog_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/course_dialog_title"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="10dp"
+        android:id="@+id/course_dialog_description_heading"
+        android:text="Description:"
+        android:textStyle="italic|bold"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/course_dialog_description_heading"
+        android:textStyle="italic"
+        android:text="@string/CMSC_106_text"
+        android:justificationMode="inter_word"
+        android:id="@+id/course_dialog_description_body"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/course_dialog_description_body"
+        android:layout_marginLeft="15dp"
+        android:layout_marginVertical="10dp"
+        android:id="@+id/course_dialog_unit_heading"
+        android:text="Credit: "
+        android:textStyle="italic|bold"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/course_dialog_unit_heading"
+        android:layout_below="@+id/course_dialog_description_body"
+        android:layout_marginVertical="10dp"
+        android:id="@+id/course_dialog_unit_body"
+        android:text="6"
+        android:textStyle="italic|bold"
+        android:textSize="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Primary"
+        android:layout_below="@id/course_dialog_unit_body"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Cancel"
+        android:textSize="10dp"
+        android:id="@+id/course_dialog_cancel"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Primary"
+        android:layout_below="@id/course_dialog_unit_body"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginHorizontal="30dp"
+        android:text="Confirm"
+        android:textSize="10dp"
+        android:id="@+id/course_dialog_confirm"/>
+
+
+</RelativeLayout>
